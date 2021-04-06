@@ -22,6 +22,7 @@ Expected O/P on CLI:
 
 "Email sent!"
 
+...........................................................................................
 
 Assignment 2:Write a python class that is able to return the meaning of an English language word provided to it
 in the terminal. (Use https://dictionaryapi.dev/)
