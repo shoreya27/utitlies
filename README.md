@@ -18,3 +18,7 @@ It will ask 3 arguments from the user
 
 Once all provided by user, email is sent to the recipent from "assignmnt.zelth06@gmail.com"
 
+Expected O/P on CLI:
+
+"Email sent!"
+
