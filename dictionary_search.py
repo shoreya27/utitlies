@@ -7,6 +7,12 @@ import requests
 
 
 class DictionaryLord():
+    '''
+    I am a Dictionary lord
+    I will bring meaning for a given 
+    word from the magic url 
+    Please demand meaning of any word
+    '''
 
     URL = "https://api.dictionaryapi.dev/api/v2/entries/en_US/"
 
@@ -22,7 +28,7 @@ class DictionaryLord():
 
         return response.json()
     
-    def get_meaning(self):
+    def _get_meaning(self):
         data           = self._search_meaning()[0]["meanings"]
         part_of_speach = data[0]["partOfSpeech"]
         definition     = data[0]["definitions"][0]["definition"]
@@ -31,7 +37,7 @@ class DictionaryLord():
     
     @property
     def word_meaning(self):
-        self.get_meaning()
+        self._get_meaning()
         return self.meaning
 
 def main():
